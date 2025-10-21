@@ -6,6 +6,18 @@ public class Reservation {
     private int numberOfNights;
     private boolean isWeekend;
 
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "roomType='" + roomType + '\'' +
+                ", numberOfNights=" + numberOfNights +
+                ", isWeekend=" + isWeekend +
+                ",getPrice() =" + getPrice()+
+                ",getReservationTotal=" + getReservationTotal()+
+                '}';
+    }
+
+
 
 
     //Constructor

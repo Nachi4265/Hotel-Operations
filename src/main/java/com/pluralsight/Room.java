@@ -24,7 +24,7 @@ public class Room {
 
 
     public Room(int numberOfBed){
-        this.numberOfBeds = numberOfBeds;
+        this.numberOfBeds = numberOfBed;
         this.price = 120.00;
         this.isOccupied = false;
         this.isDirty = false;
@@ -59,6 +59,26 @@ public class Room {
         return !(isOccupied||isDirty);
     }
 
+
+
+
+    public void checkIn(){
+        this.isDirty = true;
+        this.isOccupied = true;
+    }
+
+    public void checkOut(){
+//        When a guest checks out of a room it must first be cleaned by a housekeeper
+//        before another guest can check into the room.
+        this.isOccupied = false;
+    }
+
+    public void cleanRoom(){
+        //Once a room is cleaned it should be changed from isDirty to i
+        if(!isOccupied()){
+            this.isDirty = false;
+        }
+    }
 
 
 }
