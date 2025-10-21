@@ -8,13 +8,11 @@ public class Main {
         //making collection of rooms
         ArrayList<Room>rooms = new ArrayList<>();
 
-
         //rooms with number of beds (rooms are new)
         Room r101 = new Room(1);
         Room r102 = new Room(2);
         Room r103 = new Room(2);
         Room r104 = new Room(2);
-
 
         //add room(r101) to our room collection
         rooms.add(r101);
@@ -27,7 +25,6 @@ public class Main {
             System.out.println(r);
         }
         System.out.println();
-
 
 
         //Guest checked into rooms
@@ -49,12 +46,11 @@ public class Main {
             System.out.println(r);
         }
         System.out.println();
+//------------------------------------------------------------------------------------------------------------------------------//
 
 
 
-
-
-
+        //RESERVATIONS
 
         ArrayList<Reservation>reservations = new ArrayList<>();
 
@@ -74,12 +70,9 @@ public class Main {
 
         System.out.println();
 
+//-------------------------------------------------------------------------------------------------------------------------------------//
 
-
-
-
-
-
+        //EMPLOYEES
 
         ArrayList<Employee>employees = new ArrayList<>();
 
@@ -120,8 +113,9 @@ public class Main {
         emp4.punchIn();
         emp4.punchOut();
         System.out.println();
+//-------------------------------------------------------------------------------------------------------------------------------------------------//
 
-        //Hotel
+        //HOTEL
 
         ArrayList<Hotel>Hotels = new ArrayList<>();
 

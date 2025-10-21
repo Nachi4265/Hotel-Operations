@@ -8,8 +8,8 @@ public class Hotel {
     private int bookedSuites;
     private int bookedBasicRooms;
 
-    //CONSTRUCTORS (How to make a hotel)
 
+    //CONSTRUCTORS (How to make a hotel)
     public Hotel(String name, int numberOfSuites, int numberOfBasicRooms) {
         this.name = name;
         this.numberOfSuites = numberOfSuites;
